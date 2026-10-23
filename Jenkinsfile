@@ -1,9 +1,9 @@
 
 pipeline {
     agent any 
-    
+
     environment {
-        VERCEL_TOKEN = credential("vercel-token")
+        VERCEL_TOKEN = credentials("vercel-token")
     }
 
     stages {
